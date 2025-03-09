@@ -1,0 +1,240 @@
+1. What I did?
+2. Koi kaam apka feedback mn ruka hua hai tw what will you do?
+3. Team kesi hogi?
+4. Team lead ko kaam samjh nahi aya tw what will you do?
+5. challenge?
+6. Why US?
+7. Why patient wing?
+8. Weakness?
+9. How do you handle your tasks?
+
+
+
+
+6. I enjoy designing products that help people and I think this internship is going to give me the right amount of knowledge and growth that I need to start my journey as a professional in Germany. I have so far worked in my home country and as remote positions and now working for an international startup in Germany with experienced people and with a great team is definitely a good chance for me to improve my skills and maybe even get a full-time job later. So I expect to learn new things, work on.
+
+1. Technical Questions
+Q1: How do you optimize the performance of a React application?
+A:
+
+Use React.memo to prevent unnecessary re-renders.
+Implement lazy loading with React.lazy() and Suspense.
+Optimize images and assets with CDN and proper formats (WebP, AVIF).
+Use code-splitting with React.lazy() and dynamic imports.
+Minimize re-renders with useCallback, useMemo.
+Use virtualization (e.g., react-window) for large lists.
+Avoid unnecessary state updates in context providers.
+Optimize performance using React DevTools Profiler.
+
+
+Q2: How does React’s reconciliation process work?
+A: React uses a virtual DOM and a diffing algorithm:
+React creates a virtual DOM representation of the UI.
+When state/props change, it compares the new virtual DOM with the previous one using the Diffing algorithm.
+It updates only the changed parts using reconciliation and efficiently batches updates.
+The updated changes are applied to the real DOM to optimize performance.
+
+
+Q3: What are some common security vulnerabilities in frontend development, and how do you prevent them?
+A:
+Cross-Site Scripting (XSS): Escape user input, use Content Security Policy (CSP).
+Cross-Site Request Forgery (CSRF): Use CSRF tokens, SameSite cookies.
+Clickjacking: Use X-Frame-Options: DENY.
+CORS Issues: Implement proper CORS headers.
+SQL Injection: Use parameterized queries on the backend.
+
+
+Q4: How does server-side rendering (SSR) in Next.js improve performance?
+A:
+Faster initial page load (HTML is pre-rendered).
+Better SEO (search engines can crawl the page easily).
+Reduced JavaScript execution time (only needed parts hydrate).
+Dynamic content pre-rendering using getServerSideProps().
+
+
+
+
+2. Behavioral Questions
+
+Q5: Can you describe a time when you faced a technical challenge and how you solved it?
+
+A: (Use the STAR method: Situation, Task, Action, Result)
+Situation: In a past project, a React component was re-rendering too frequently, causing UI lag.
+Task: Identify and fix unnecessary re-renders.
+Action: Used React.memo and useCallback to optimize the component.
+Result: Improved performance and reduced re-renders by 40%, leading to a smoother UI.
+
+
+Q6: How do you handle feedback and code reviews?
+A:
+I view feedback as an opportunity to improve.
+I always ask clarifying questions if something is unclear.
+I ensure code quality, readability, and maintainability.
+I provide constructive suggestions in reviews and encourage collaborative learning.
+
+
+3. Project-Related Questions
+
+Q7: Can you walk us through a recent project you worked on?
+(Since you’ve worked on multiple projects like Stacked Lobbies, Revolon Dashboard, and Athenahealth integration, choose one.)
+
+A (Example - Task Management App):
+
+I developed a task management application using React, TypeScript, and Tailwind CSS.
+Implemented features like task creation, editing, filtering, and completion.
+Used React Context API for state management.
+Challenges: Implementing real-time updates without performance degradation.
+Solution: Used Debouncing & Optimistic UI updates for smooth UX.
+Q8: How do you manage global state in a large-scale React application?
+A:
+
+React Context API for small to medium applications.
+Redux Toolkit for complex state management.
+Zustand or Jotai for minimal and performant state management.
+React Query (TanStack Query) for caching API data efficiently.
+
+
+Q9: Have you worked with CI/CD pipelines in frontend projects?
+A: (Since you’ve implemented GitHub Actions for CI/CD, mention it!)
+
+Yes, I have experience setting up CI/CD pipelines using GitHub Actions.
+Automated code linting, testing, and deployment.
+Used self-hosted runners for deployment on production servers.
+Ensured zero downtime deployment with rollback strategies.
+
+4. System Design & Coding
+Q10: How would you design a scalable component library for a React project?
+A:
+Use Storybook for documentation and development.
+Follow Atomic Design Principles (Atoms, Molecules, Organisms).
+Use TailwindCSS + ShadCN UI for styling.
+Implement theme support (dark/light mode).
+Publish as an NPM package for reusability.
+
+
+Q9: Why do you want to work on PatientWing?
+A:
+
+PatientWing is solving real-world healthcare challenges with technology.
+I have experience in React, API integrations, and healthcare tech.
+I’m excited about building user-centric patient experiences.
+
+
+
+Technical
+
+Progressive Web App.
+
+A PWA uses Service Workers to cache resources (HTML, CSS, JS, API responses) so users can access the app even without an internet connection.
+
+A Service Worker is a JavaScript script that runs in the background, separate from the web page, enabling features like offline caching, background sync, and push notifications in Progressive Web Apps (PWA).
+
+WebRTC
+
+WebRTC (Web Real-Time Communication) is a technology that enables peer-to-peer (P2P) communication directly between browsers and devices without needing an external server. It is commonly used for video calls, voice communication, and real-time data sharing in web applications.
+
+How WebRTC works?
+- Get user media
+- Create a peer connection
+- Exchange Signaling Data
+- Start Communication
+
+Q: How does WebRTC establish a peer-to-peer connection?
+
+A: WebRTC uses STUN/TURN servers for NAT traversal and a signaling server to exchange session descriptions (SDP) and ICE candidates before establishing a direct connection.
+
+Q: Why do WebRTC applications use both STUN and TURN?
+A: STUN is used to attempt a direct P2P connection, but if it fails due to strict firewalls, TURN relays the data as a fallback.
+
+
+WebAssembly WASM
+
+WebAssembly (WASM) is a low-level binary format that allows developers to run high-performance code in web browsers. It enables languages like C, C++, and Rust to be compiled and executed in the browser at near-native speed alongside JavaScript.
+
+Q: How does WebAssembly improve web performance?
+A: WebAssembly runs precompiled binary code, which executes much faster than JavaScript, making it ideal for performance-critical tasks like gaming, video editing, and AI.
+
+Cryptography
+
+Cryptography is the practice of securing information by converting it into an unreadable format using mathematical algorithms. 
+
+Types of Cryptography
+
+🔹 Symmetric Encryption (Same key for encryption & decryption)
+- Example: AES (Advanced Encryption Standard)
+- Use Case: Secure communication within private systems
+
+🔹 Asymmetric Encryption (Different keys for encryption & decryption)
+- Example: RSA, ECC (Elliptic Curve Cryptography)
+- Use Case: Secure web transactions (SSL/TLS)
+
+🔹 Hashing (One-way transformation of data)
+- Example: SHA-256, BLAKE2
+- Use Case: Password storage, digital signatures
+
+Post-Quantum Cryptography
+
+Post-Quantum Cryptography (PQC) refers to cryptographic algorithms designed to be secure against quantum computers, which can break traditional encryption methods.
+
+🔹 Why is PQC Important?
+Quantum computers (using Shor’s Algorithm) can break RSA, ECC, and other classical encryption methods exponentially faster than traditional computers.
+
+🔹 How PQC Works?
+New encryption methods are being developed to resist quantum attacks. Some examples:
+✅ Lattice-Based Cryptography – Uses complex algebraic structures (e.g., CRYSTALS-Kyber, NTRU)
+✅ Hash-Based Signatures – Secure against quantum attacks (e.g., XMSS, SPHINCS+)
+✅ Multivariate Polynomial Cryptography – Based on solving polynomial equations
+✅ Code-Based Cryptography – Uses error-correcting codes (e.g., McEliece)
+
+
+
+Behavioral
+
+Q1. "Hi Munim, thanks for joining today. Can you start by introducing yourself and your experience as a frontend developer?"
+
+"Hi, I’m Munim Ali, a frontend engineer with a Bachelor's degree in Software Engineering from the University of Karachi-UBIT. I have been working at Expedite Studio for the past three years, where I have built and optimized several web applications using React, Next.js, TypeScript, and Tailwind CSS. I also had the opportunity to work on Revolon, a user management dashboard with RPM token staking integration, where I focused on building an interactive and scalable frontend experience."
+
+Q2. "That’s great! Since we are a healthcare company, can you tell us how you would ensure that a React-based healthcare application is both secure and performant?"
+
+*"Absolutely! Security is a top priority in healthcare applications since they handle sensitive patient data. On the frontend, we can ensure security by:
+
+Using HTTPS & Secure Cookies to encrypt data transmissions.
+Implementing OAuth 2.0 & JWT tokens for secure authentication.
+Following HIPAA compliance by avoiding storage of Protected Health Information (PHI) on the frontend.
+For performance, a healthcare app should always be responsive and fast. We can achieve this by:
+
+Implementing lazy loading to reduce initial load time.
+Using React Query to cache API responses and minimize redundant requests.
+Optimizing accessibility (WCAG standards) to ensure patients can easily interact with the app.
+Additionally, PWA techniques like service workers can enable offline access, ensuring critical patient data is available even with network issues."*
+
+Q3. "Can you walk us through how you integrated an external API in one of your projects? What challenges did you face, and how did you overcome them?"
+
+*"Sure! Recently, I worked on Revolon, a Web3 onboarding and staking app, where I integrated Web3 for staking functionalities. Since Web3 was new to me, I started by understanding blockchain basics and how smart contracts interact with a frontend application.
+
+To integrate Web3 in React, I followed these steps:
+
+Connecting Wallets – Used ethers.js and MetaMask to connect user wallets.
+Interacting with Smart Contracts – Used ethers.js to read/write contract data (e.g., stake tokens, check balances).
+Handling Transactions & Errors – Implemented proper try-catch blocks to handle failed transactions and gas fee estimation.
+The biggest challenge was understanding gas fees and contract approval mechanisms. I overcame this by testing transactions on a testnet and referring to the smart contract documentation. Ultimately, I successfully implemented a staking dashboard where users could stake, unstake, and track rewards in real time."*
+
+
+"Great response! Now, let’s discuss teamwork. Can you describe a time when you collaborated with backend developers to solve a frontend issue?"
+
+🔹 Situation:
+"While working on Revolon, we encountered an issue where the JWT token was not verifying on the frontend during authentication. This was preventing users from successfully logging in."
+
+🔹 Task:
+"My task was to debug why the token was failing verification and ensure smooth authentication between the frontend (React) and backend (NestJS or FastAPI)."
+
+🔹 Action:
+
+Collaborated with the backend developer to understand how the JWT was being generated and verified.
+Checked the token payload using jwt.io and found that the token was expiring too quickly.
+Reviewed the authentication flow together and noticed that the backend was issuing short-lived tokens without proper refresh logic.
+Suggested implementing a refresh token mechanism to extend session validity without forcing frequent re-authentication.
+🔹 Result:
+"After implementing refresh tokens and adjusting the JWT expiration time, the authentication flow worked smoothly. Users were able to log in without unexpected token failures, improving the overall user experience."
+
+

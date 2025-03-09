@@ -32,7 +32,7 @@ let a = 10;
 var b = 20;
 const c = 30;
 
-**_Solution_:** Output will be undefined
+**_Solution_:** Output will be undefined in var and reference error in let and const.
 
 **_Question 6:_** We have two variables of any value, swap the values of the variable without using third variable.
 
@@ -90,6 +90,13 @@ While typeof returns "object" for both arrays and objects, you can use the follo
 1. Array.isArray
 2. Object.prototype.toString.call(obj)
 
+**_Question 9:_**What are closures?
+**_Solution_**: A closure is a function that retains access to variables from its parent scope, even after the parent function has executed.
+
+**_Question 10:_**What are lexical scope?
+**_Solution_**: Lexical Scope means that a function can access variables defined in its parent scope, even if the function is executed outside that scope.
+🔹 Lexical refers to the position where variables and functions are declared in the code.
+
 **REACT QUESTIONS**
 
 **_Question 1:_** What is the basic difference between Class and functional components in react, Why functional components are introduced? What was the drawback in class components in React.
@@ -126,3 +133,118 @@ While typeof returns "object" for both arrays and objects, you can use the follo
 **_Question 3:_** Why do we have different folders of utils and hooks in react?
 
 **_Solution_**: We cannot use react contect hooks i.e useState and useEffect in utility functions. That's why we maintain these function in different folders.
+
+**CHATGPT INTERVIEW QUESTIONS**
+
+1. What is JavaScript?
+   JavaScript is a lightweight, interpreted programming language used to create dynamic web applications.
+
+2. What are the data types in JavaScript?
+   JavaScript has 7 primitive types: String, Number, Boolean, Undefined, Null, BigInt, Symbol, and 1 non-primitive type: Object.
+
+3. What is the difference between == and ===?
+   == checks value only (type coercion), whereas === checks both value and type (strict equality).
+
+4. What is the difference between var, let, and const?
+   var: Function-scoped, hoisted, can be redeclared.
+   let: Block-scoped, hoisted but not initialized.
+   const: Block-scoped, cannot be reassigned.
+
+5. What is hoisting in JavaScript?
+   Hoisting moves function and variable declarations to the top of their scope before execution.
+
+6. What is closure in JavaScript?
+   A closure is a function that remembers variables from its lexical scope, even after the parent function has executed.
+
+7. What is lexical scope?
+   Lexical scope means a function can access variables from its parent scope due to static scoping.
+
+8. What is the difference between function declaration and function expression?
+   Function Declaration: Named function, hoisted.
+   Function Expression: Anonymous function assigned to a variable, not hoisted.
+
+9. What is the difference between null and undefined?
+   null: A deliberate non-value.
+   undefined: A variable that has been declared but not assigned a value.
+
+10. What is an Immediately Invoked Function Expression (IIFE)?
+    An IIFE is a function that executes immediately after being defined:
+
+(function() { console.log("IIFE"); })();
+
+11. What is the difference between map(), forEach(), and filter()?
+    map(): Returns a new array with transformed elements.
+    forEach(): Iterates but doesn’t return a new array.
+    filter(): Returns a new array with elements that meet a condition.
+
+12. What is the difference between slice() and splice()?
+    slice(): Returns a new array without modifying the original.
+    splice(): Modifies the original array by adding/removing elements.
+
+13. What is the difference between synchronous and asynchronous JavaScript?
+    Synchronous: Executes line by line.
+    Asynchronous: Executes tasks in the background (via callbacks, promises, async/await).
+
+14. What are Promises in JavaScript?
+    A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation.
+
+15. What are async and await?
+    async makes a function return a Promise, and await pauses execution until the Promise resolves.
+
+16. What is event bubbling and event capturing?
+    Bubbling: Event moves from child to parent.
+    Capturing (Trickling): Event moves from parent to child.
+
+17. What is the this keyword in JavaScript?
+    this refers to the object that is executing the function, and its value depends on where it is called.
+
+18. How does bind(), call(), and apply() work?
+    bind(): Returns a new function with this set to a specific object.
+    call(): Calls the function with a specific this value and arguments.
+    apply(): Same as call() but takes arguments as an array.
+
+19. What is memoization?
+    Memoization is an optimization technique that stores function results to avoid redundant computations.
+
+20. What is the difference between deep copy and shallow copy?
+    Shallow copy: Copies only references to objects (Object.assign, spread operator).
+    Deep copy: Recursively copies all properties (JSON.parse(JSON.stringify(obj)), structuredClone()).
+
+21. What is the event loop in JavaScript?
+    The event loop allows JavaScript to handle asynchronous tasks by pushing them from the callback queue to the call stack when it's empty.
+
+22. What is debouncing and throttling?
+    Debouncing: Delays function execution until after a specified delay.
+    Throttling: Limits function execution to once in a specified time frame.
+
+23. What is the difference between localStorage, sessionStorage, and cookies?
+    localStorage: Persistent storage, no expiration.
+    sessionStorage: Clears when the session ends.
+    cookies: Small, can be sent with HTTP requests, has an expiration date.
+
+24. What is JSON.stringify() and JSON.parse()?
+    JSON.stringify(): Converts an object to a JSON string.
+    JSON.parse(): Converts a JSON string back to an object.
+
+25. How do you make an API call in JavaScript?
+    Using fetch() or axios:
+    fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+26. What is a higher-order function?
+    A function that takes another function as an argument or returns a function.
+
+27. What is destructuring in JavaScript?
+    A way to extract values from arrays/objects into variables:
+    const { name, age } = person;
+
+28. What is the difference between setTimeout and setInterval?
+    setTimeout: Executes a function once after a delay.
+    setInterval: Executes a function repeatedly at fixed intervals.
+
+29. How does JavaScript handle memory management?
+    JavaScript uses garbage collection (mark-and-sweep algorithm) to free memory used by unreachable objects.
+
+30. What is use strict in JavaScript?
+    "use strict" enforces stricter parsing and error handling to prevent silent bugs.
